@@ -23,9 +23,11 @@ $tf-link: 'Holtwood One SC', serif;
 
 .card {
     display: flex;
+    padding: 10em;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    gap: 3em;
 
     &__title {
         font-family: $tf-heading;
@@ -37,7 +39,40 @@ $tf-link: 'Holtwood One SC', serif;
         font-size: 2.5rem;
     }
 
-    &__link {
+    &__text-description {
+        margin: {
+            top: 2em;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-family: $tf-link;
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+        background-color: $primary-light-blue;
+        box-shadow: inset 1.5em 4px 0px -3px $primary-dark-blue;
+    }
+
+    &__btn:hover {
+        background-color: #4a7093;
+    }
+
+    &__link {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link-text {
+        font-family: $tf-link;
+        color: white;
     }
 }
