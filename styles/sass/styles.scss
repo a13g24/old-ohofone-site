@@ -1,0 +1,23 @@
+@use '../css/reset.css';
+@import 'https://fonts.googleapis.com/css2?family=Crimson+Text&family=DM+Serif+Display&family=Holtwood+One+SC&family=Zen+Kurenaido&display=swap';
+
+// Colors
+$primary-light-blue: #6093C3;
+$primary-dark-blue: #395276;
+$primary-red: #C36060;
+
+// Fonts
+$tf-main: 'Crimson Text', serif;
+$tf-heading: 'DM Serif Display', serif;
+$tf-descriptive: 'Zen Kurenaido', sans-serif; 
+$tf-link: 'Holtwood One SC', serif;
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: $tf-descriptive;
+}
+
