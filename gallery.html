@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <script src="https://kit.fontawesome.com/307b811eb0.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation to go back to landing page -->
+    <nav class="navigation">
+        <a href="./index.html" class="navigation__btn">
+           <img src="./images/home-96.svg" alt="Home Icon" class="navigation__icon">
+        </a>
+    </nav>
+
+    <section class="slider">
+
+        <!-- Left arrow -->
+        <button id="slider-arrow-prev" class="slider__arrow">
+            &#8249;
+        </button>
+
+        <!-- Right arrow -->
+        <button id="slider-arrow-next" class="slider__arrow">
+            &#8250;
+        </button>
+
+        <ul id="slider-container" class="slider__container">
+            <li class="slider__slide">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__copy-container">
+                        <h1 class="card__title">
+                            First Project
+                        </h1>
+
+                        <h2 class="card__description">
+                            Brief project description
+                        </h2>
+
+                        <div class="card__text-container">
+                            <div class="card__brand-icons">
+                                <!-- TODO: List of icons for tech used in this project -->
+                                <i class="fa-brands fa-html5 fa-2xl"></i>
+                                <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                                <i class="fa-brands fa-square-js fa-2xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="card__bar"></div>
+                    </div>
+
+                    <div class="card__shape-container">
+                        <div class="card__btn card__btn--color-blue">
+                            <a class="card__link" href="#">
+                                <span class="card__link-text">
+                                    Launch
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slider__slide">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__copy-container">
+                        <h1 class="card__title">
+                            Second Project
+                        </h1>
+
+                        <h2 class="card__description">
+                            Brief project description
+                        </h2>
+
+                        <div class="card__text-container">
+                            <div class="card__brand-icons">
+                                <!-- TODO: List of icons for tech used in this project -->
+                                <i class="fa-brands fa-html5 fa-2xl"></i>
+                                <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="card__bar"></div>
+                    </div>
+
+                    <div class="card__shape-container">
+                        <div class="card__btn card__btn--color-blue">
+                            <a class="card__link" href="#">
+                                <span class="card__link-text">
+                                    Launch
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
