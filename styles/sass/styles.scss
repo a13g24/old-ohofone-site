@@ -5,6 +5,7 @@
 $primary-light-blue: #6093C3;
 $primary-dark-blue: #395276;
 $primary-red: #C36060;
+$primary-gray: #E5E5E5;
 
 // Fonts
 $tf-main: 'Crimson Text', serif;
@@ -19,6 +20,34 @@ $tf-link: 'Holtwood One SC', serif;
 :root {
     font-size: 16px;
     font-family: $tf-main;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: {
+        top: 1em;
+        left: auto;
+        right: auto;
+        bottom: 0;
+    }
+    background-color: white;
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 3em;
+        border: {
+            // top: 2px solid $primary-gray;
+            bottom: 2px solid $primary-gray;
+        }
+        // text-transform: uppercase;
+    }
+
+    &__icon {
+        width: 3em;
+    }
 }
 
 .card {
@@ -37,6 +66,9 @@ $tf-link: 'Holtwood One SC', serif;
     &__description {
         font-family: $tf-descriptive;
         font-size: calc(1rem + 1.5vw);
+        margin: {
+            top: 0.23em;
+        }
     }
 
     &__text-description {
@@ -93,7 +125,7 @@ $tf-link: 'Holtwood One SC', serif;
         margin: {
             top: 1em;
         }
-        background-color: #e5e5e5;
+        background-color: $primary-gray;
     }
 }
 
