@@ -6,9 +6,13 @@ let nextButton = document.getElementById("slider-arrow-next");
 nextButton.addEventListener("click", () => {
     let slideWidth = slide.clientWidth;
     slidesContainer.scrollLeft += slideWidth;
+
+    // FIXME: Btn must go transparent again after click
 });
 
 prevButton.addEventListener("click", () => {
     let slideWidth = slide.clientWidth;
     slidesContainer.scrollLeft -= slideWidth;
+
+    // FIXME: Btn must go transparent again after click
 });
