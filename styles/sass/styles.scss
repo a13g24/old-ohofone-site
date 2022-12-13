@@ -37,7 +37,9 @@ $tf-link: 'Holtwood One SC', serif;
 
     &__btn {
         display: block;
-        margin: 0 auto;
+        margin: {
+            left: 3em;
+        }
         width: 3em;
         border: {
             // top: 2px solid $primary-gray;
@@ -177,8 +179,12 @@ $tf-link: 'Holtwood One SC', serif;
         transition: opacity 100ms;
     }
 
-    &__arrow:hover,
+
+    // Order for these next 2 matters to prevent persistent focus on btns
     &__arrow:focus {
+        opacity: 0.5;
+    }
+    &__arrow:hover {
         opacity: 1;
     }
 }
